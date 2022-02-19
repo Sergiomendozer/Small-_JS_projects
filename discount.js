@@ -3,7 +3,8 @@ function discount(original_price, percentage_off)
 {
     decimal = 100 - percentage_off 
     decimal = decimal/100
-    console.log(decimal)
+    new_price = original_price*decimal
+    console.log(`The price went from $${original_price} to $${new_price}`)
 }
     
 const prompt = require("prompt-sync")({ sigint: true });
